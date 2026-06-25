@@ -1,0 +1,41 @@
+<?php
+    if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "GET"){
+        $name = $_GET["FullName"];
+        $age = $_GET["age"];
+        $email = $_GET["email"];
+        $phone = $_GET["phone"];
+        $address = $_GET["address"];
+        $class_name = $_GET["class_name"];
+        $roll_number = $_GET["roll_number"];
+
+        echo "Name: ".$name."<br>Age: ".$age."<br>Email: ".$email."<br>Phone: ".$phone."<br>Address: ".$address."<br>Class: ".$class_name."<br>Roll Number: ".$roll_number."<br>";
+    }else{
+        echo "Please submit the form using GET method.";
+    }
+    
+    ?>
+
+
+
+
+
+
+
+<br><br>
+<form action="" method="get">
+    <label> Enter your Name:</label>
+    <input type="text" name="FullName"><br>
+    <label> Enter your Age:</label>
+    <input type="number" name="age" id="age"><br>
+    <label> Enter your Email:</label>
+    <input type="email" name="email" id="email"><br>
+    <label> Enter your Phone Number:</label>
+    <input type="tel" name="phone" id="phone"><br>
+    <label> Enter your Address:</label>
+    <input type="text" name="address" id="address"><br>
+    <label> Enter your class:  </label>
+    <input type="text" name="class_name" id="class_name"><br>
+    <label> Enter your Roll Number:  </label>
+    <input type="text" name="roll_number" id="roll_number"><br>
+    <button type="submit">Submit</button>
+</form>
