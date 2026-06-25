@@ -3,9 +3,9 @@
         $name = $_GET["FullName"];
         $age = $_GET["age"];
         $email = $_GET["email"];
-        $phone = $_GET["phone"];
+        $number = $_GET["number"];
         $address = $_GET["address"];
-        $class_name = $_GET["class_name"];
+        $class = $_GET["class"];
         $roll_number = $_GET["roll_number"];
 
         echo "Name: ".$name."<br>Age: ".$age."<br>Email: ".$email."<br>Phone: ".$phone."<br>Address: ".$address."<br>Class: ".$class_name."<br>Roll Number: ".$roll_number."<br>";
@@ -30,11 +30,11 @@
     <label> Enter your Email:</label>
     <input type="email" name="email" id="email"><br>
     <label> Enter your Phone Number:</label>
-    <input type="tel" name="phone" id="phone"><br>
+    <input type="tel" name="number" id="number"><br>
     <label> Enter your Address:</label>
     <input type="text" name="address" id="address"><br>
     <label> Enter your class:  </label>
-    <input type="text" name="class_name" id="class_name"><br>
+    <input type="text" name="class" id="class"><br>
     <label> Enter your Roll Number:  </label>
     <input type="text" name="roll_number" id="roll_number"><br>
     <button type="submit">Submit</button>
