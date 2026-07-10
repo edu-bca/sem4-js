@@ -4,7 +4,7 @@ include "dbconnection.php";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM form WHERE id = $id";
+    $sql = "SELECT * FROM data WHERE id = $id";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -21,7 +21,7 @@ if (isset($_POST['update'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
 
-    $sql = "UPDATE form
+    $sql = "UPDATE data
             SET firstname='$firstname',
                 lastname='$lastname'
             WHERE id=$id";
