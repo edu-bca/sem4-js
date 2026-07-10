@@ -5,7 +5,7 @@ if(isset($_GET['id'])) {
 
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM form WHERE id=$id";
+    $sql = "SELECT * FROM data WHERE id=$id";
     $result = $conn->query($sql);
 
     if($result->num_rows > 0) {
@@ -22,7 +22,7 @@ if(isset($_POST['confirm'])) {
 
     $id = $_POST['id'];
 
-    $sql = "DELETE FROM form WHERE id=$id";
+    $sql = "DELETE FROM data WHERE id=$id";
 
     if($conn->query($sql) === TRUE) {
         header("Location: process_form.php");
