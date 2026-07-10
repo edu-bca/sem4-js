@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
 
-    $sql = "INSERT INTO form (firstname, lastname) VALUES ('$firstname', '$lastname')";
+    $sql = "INSERT INTO data (firstname, lastname) VALUES ('$firstname', '$lastname')";
 
     if($conn -> query($sql) === TRUE){
         echo "New Record Added Succesfully";
